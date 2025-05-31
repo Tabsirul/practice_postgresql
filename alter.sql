@@ -246,3 +246,4 @@ VALUES (
         'New Zealand'
     );
 SELECT * from students;
+SELECT * from students where age>21 ;
