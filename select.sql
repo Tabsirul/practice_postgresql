@@ -40,3 +40,20 @@ SELECT * from students
    WHERE first_name Like '__a%';
 SELECT * from students
    WHERE first_name ILike '__a%';
+SELECT * from students LIMIT 5;
+SELECT * from students 
+   WHERE country IN ('USA','Canada')LIMIT 5;
+SELECT * from students LIMIT 5 OFFSET 5;
+SELECT * from students LIMIT 5 OFFSET 5 * 0;
+SELECT * from students LIMIT 5 OFFSET 5 * 1;
+SELECT * from students LIMIT 5 OFFSET 5 * 2;
+SELECT * from students;
+DELETE from students
+ WHERE GRADE='B';
+UPDATE students
+SET email = 'default@mail.com'
+   WHERE student_id=45;
+
+
+
+
